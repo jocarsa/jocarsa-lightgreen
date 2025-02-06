@@ -1,18 +1,18 @@
 <?php
-/**
- * A simple Markdown-to-HTML converter with improved support for fenced code blocks.
- *
- * Supported features:
- * - Fenced code blocks using triple backticks, optionally with a language specifier.
- * - Headings (lines starting with 1 to 6 '#' characters).
- * - Horizontal rules (a line with three or more hyphens).
- * - Inline code using backticks.
- * - Bold text with **double asterisks**.
- * - Italic text with *single asterisks*.
- * - Links of the form [text](url).
- * - Paragraphs (blocks of text separated by blank lines).
- *
- * This is a basic implementation and does not cover the full Markdown specification.
+/*
+ A simple Markdown-to-HTML converter with improved support for fenced code blocks.
+
+ Supported features:
+ - Fenced code blocks using triple backticks, optionally with a language specifier.
+ - Headings (lines starting with 1 to 6 '#' characters).
+ - Horizontal rules (a line with three or more hyphens).
+ - Inline code using backticks.
+ - Bold text with **double asterisks**.
+ - Italic text with *single asterisks*.
+ - Links of the form [text](url).
+ - Paragraphs (blocks of text separated by blank lines).
+
+ This is a basic implementation and does not cover the full Markdown specification.
  */
 class MarkdownConverter {
 

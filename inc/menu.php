@@ -1,4 +1,7 @@
 <?php
+/*
+	Función que genera un menú recursivo a partir del contenido de las carpetas
+*/
 function listFolderTree($dir, &$counter = 0)
 {
     $files = scandir($dir);
@@ -19,7 +22,7 @@ function listFolderTree($dir, &$counter = 0)
         } else {
             $icon = "📄";
             $fileName = pathinfo($file, PATHINFO_FILENAME);
-            $displayName = "<a href='?archivo=" . urlencode($filePath) . "'>" . htmlspecialchars($fileName) . "</a>";
+            $displayName = "<a href='?archivo=" . codifica(urlencode($filePath)) . "'>" . htmlspecialchars($fileName) . "</a>";
             $output .= "<li>{$icon} {$displayName}</li>";
         }
     }
